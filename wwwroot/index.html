@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API das Águas</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <main>
+        <h1>Cadastro de Águas</h1>
+
+        <form id="formAgua">
+            <input type="hidden" id="id">
+
+            <label for="marca">Marca</label>
+            <input id="marca" required>
+
+            <label for="volume">Volume (ml)</label>
+            <input id="volume" type="number" min="1" required>
+
+            <label for="tipo">Tipo</label>
+            <select id="tipo" required>
+                <option value="">Selecione</option>
+                <option value="Mineral">Mineral</option>
+                <option value="Com gás">Com gás</option>
+                <option value="Sem gás">Sem gás</option>
+            </select>
+
+            <button type="submit">Salvar</button>
+            <button type="button" id="cancelar">Cancelar edição</button>
+        </form>
+
+        <p id="mensagem" role="status"></p>
+
+        <h2>Águas cadastradas</h2>
+        <button type="button" id="atualizar">Atualizar lista</button>
+        <ul id="listaAguas"></ul>
+    </main>
+
+    <script src="/js/aguas.js"></script>
+</body>
+</html>

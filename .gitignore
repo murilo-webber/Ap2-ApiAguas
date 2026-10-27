@@ -1,0 +1,25 @@
+## .NET
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## SQLite
+*.db
+*.db-shm
+*.db-wal
+
+## VS / VS Code
+.vs/
+.vscode/
+*.code-workspace
+
+## OS
+.DS_Store
+Thumbs.db
+
+## Outros
+*.log
+*.tmp

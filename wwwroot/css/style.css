@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #f0f7ff;
+    color: #1a3a5c;
+    line-height: 1.5;
+    padding: 2rem;
+}
+
+main {
+    max-width: 640px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 80, 150, 0.1);
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    color: #0a4d8c;
+}
+
+form {
+    display: grid;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+label {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+input, select {
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #b0d0e8;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    background: #0a7cc9;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+button:hover {
+    background: #0866a8;
+}
+
+#cancelar {
+    background: #6c757d;
+}
+
+#cancelar:hover {
+    background: #5a6268;
+}
+
+#mensagem {
+    margin: 1rem 0;
+    padding: 0.75rem;
+    border-radius: 6px;
+    background: #e8f4fc;
+    min-height: 1.5rem;
+}
+
+h2 {
+    margin: 1.5rem 0 0.75rem;
+    font-size: 1.25rem;
+}
+
+#listaAguas {
+    list-style: none;
+}
+
+#listaAguas li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e0eef8;
+}
+
+#listaAguas li span {
+    flex: 1;
+}
+
+#listaAguas button {
+    padding: 0.35rem 0.7rem;
+    font-size: 0.85rem;
+}
